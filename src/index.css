@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-electric-blue: #2F5BFF;
+  --color-electric-blue-tint: #EEF2FF;
+  --color-navy-ink: #0F172A;
+
+  --color-light-primary: #2F5BFF;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-primary-container: #EEF2FF;
+  --color-light-on-primary-container: #002388;
+  --color-light-secondary: #434656;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-secondary-container: #E8E8E3;
+  --color-light-on-secondary-container: #191B24;
+  --color-light-background: #FAFAF7;
+  --color-light-on-background: #14161D;
+  --color-light-surface: #FAFAF7;
+  --color-light-surface-container-lowest: #FFFFFF;
+  --color-light-surface-container-low: #F4F4EF;
+  --color-light-surface-container: #ECECE6;
+  --color-light-surface-container-high: #E4E4DD;
+  --color-light-on-surface: #14161D;
+  --color-light-on-surface-variant: #525563;
+  --color-light-outline: #737685;
+  --color-light-outline-variant: #DFDFD7;
+  --color-light-inverse-surface: #0F172A;
+  --color-light-inverse-on-surface: #F8FAFC;
+  --color-light-error: #BA1A1A;
+  --color-light-on-error: #FFFFFF;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-title: "Instrument Sans", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-label: "Instrument Sans", sans-serif;
+  --font-mono: "Spline Sans Mono", monospace;
+}
+
+@layer utilities {
+  .portfolio-card-shadow {
+    box-shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.07);
+  }
+  .portfolio-card-shadow-hover:hover {
+    box-shadow: 0 20px 40px -15px rgba(47, 91, 255, 0.14);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
