@@ -50,12 +50,7 @@ export interface TestimonialItem {
 }
 
 export const BRAND_ASSETS = {
-  logoDark:
-    'https://lh3.googleusercontent.com/aida/ALJJyrAyQHmDEqq-CDTMNrh1UZHBTeeMYOH-783E-9mqvjid8NZByALjoAIFWEnxoDeTuCWLBrlv4ybDdrRTufb4HOtoyLCzKig_q0EZ_rZfBE3COJUaAIirbVSQRMvEiek59BYkASS5wRvPtbqMZAnJbTydJwpwbuX5d_1NCiBP-54hP7-l2jX2aX5_jb2kbe-320Fnsj9mR33RLDiKD4Pczc0pM8NpC2ihrYjyF00e0JcdmO5rHc7-vPpvCv4',
-  logoLight:
-    'https://lh3.googleusercontent.com/aida/ALJJyrB5JOQV8CgSvfnmoN6ghQZhl-jMGEZQj4JC5t1YgjVzP1zkMjLdbdSUXqOlKv4Ya66SMSRBlKbBPvCwes4QEUcG_1rez55b0uDxPVk2FIe0_bggD_2eJAQRBXGjyM2AQeonZpM-MZkEdjGHCpfnDVdoJGYOeeZzsV56pISArrN-gz3pf6GGqrT-Rlk7eUkKF7jbHq5DaOoxr7Jch14axNp6k5ZhF2vI5bb2f3lrQIT-vU2ZtEE08fxNJLk',
-  founderAvatar:
-    'https://lh3.googleusercontent.com/aida/ALJJyrAtdyskTx1_rgG9h1zhDaaMD42UiaUiAKmaMA0HpMWCsLNrjtIzUlFTUAG58c6Ugy3n6Ijq31n-ezIgXtpMV5e7UqBJrwbPlIWmGE2P2d6pQp50S_miJccGYSqa5mV4D4ubY6PgKtdO2NLs_hOBB8jGf7_Z2JqLxpVldKC_q9nJbySEEj7f7_ovdFv0nLaCwqg1cE4-7N-KvzQ3Gg4HtC6RzR7TjQf8aI3MF9qx_tOtuudo-sAA_tGqzBCV',
+  founderAvatar: '/src/assets/images/founder_muzammil_avatar_1795492509234.jpg',
 };
 
 export const NAV_LINKS = [
@@ -133,8 +128,7 @@ export const PROJECTS: ProjectItem[] = [
     metric: '+38% onboarding',
     title: 'PulsePay Banking',
     summary: 'iOS & Android fintech experience with instant transfers.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida/ALJJyrA00bXRortZkYBTtelGZHAWGaL8nRpvxvb2GVS-NNxQy4gxI8nYmZyHmu_kuzxtI2MiIJMXl7qDdQ-W3bmwFwMz_pIl4RJzIlNUnwQ1WhopXhzwv4yGT1C0qqNJvOiB7lOOSNUhNBO8R-qGJ1OtwI8QpS4LuTZHkhvr10UdiKSgnl-H9522cyTtVaIbc1p4Z4P2WSzbze-KB6O3wS-jZPiC8uRxE3pQYKDaH-yQomiib-ASFI4v_M35yuqIvOLCZjb_SQ',
+    imageUrl: '/src/assets/images/project_pulsepay_banking_1795492509933.jpg',
     imageAlt: 'PulsePay Mobile Banking App mockup',
     challenge: 'High drop-off during KYC verification and transfer setup.',
     solution: 'Streamlined 3-step onboarding with biometric quick-send cards.',
@@ -150,8 +144,7 @@ export const PROJECTS: ProjectItem[] = [
     metric: '2.1x faster triage',
     title: 'MetricFlow Analytics',
     summary: 'Real-time revenue, cohort, and retention command center.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida/ALJJyrAj1FHr_uqO_Wd10ETjYWoz8RPZfadDJchxo_ERrzSujE7g-scackb1dD5E9ipnHFFONr_pOrV7kOcpJp-6W80oGsuXFYSIRVAJIxTsbuTgMeBiTku-Btli0WNEEZb5S5JDkxHqwkOqsGN4MTZRp0bPAKPHI8yfDkc_NPAfDudxnsMF0heaZNwZXrtz_w8kp7kTRKWPxUlP30JQ_uoJEzWcJgNPqOWd-gWPy5vPPtFAWxm-q1ZgRYY1XuoECBForCQdkg',
+    imageUrl: '/src/assets/images/project_metricflow_analytics_1795492510309.jpg',
     imageAlt: 'MetricFlow SaaS Analytics Dashboard mockup',
     challenge: 'Founders struggled to spot churn signals across 12 tables.',
     solution: 'Unified executive KPI hierarchy with cohort drill-down.',
@@ -167,8 +160,7 @@ export const PROJECTS: ProjectItem[] = [
     metric: '4.8% demo CVR',
     title: 'NovaAI Platform',
     summary: 'High-speed marketing site and interactive demo flow.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida/ALJJyrCJKfdV1RA2x2SvuFnJv_ZvY5kabfLjUkFKIm1MUxAxEuwDzpF2teHM1r9z7-zftcDbd7A0qAPbNRYmq3Eq0Of4Ikm1ZARbdkAE41Hwd35P6mtr8EYg-7dWxI4tiznhSKp63EzWNeRkLWg__BSyFbx_yt2IWMarYxAmzNY42VDDGWivN6OkGt694paaCQG4raEqSmdkvEPFhfRrnlokyVzG7Ahdy7jhNTrWpzsWjBtUZp7KXmz1TXzVA2FyUST_',
+    imageUrl: '/src/assets/images/project_novaai_platform_1795492511566.jpg',
     imageAlt: 'NovaAI Automation Platform Website mockup',
     challenge: 'Technical product story felt abstract to non-technical buyers.',
     solution: 'Built interactive workflow previews and clear ROI framing.',
@@ -184,8 +176,7 @@ export const PROJECTS: ProjectItem[] = [
     metric: '180K launch views',
     title: 'Kinetix Launch Film',
     summary: '90-second 3D and UI motion launch reel for Series A.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida/ALJJyrADjp3E6wnubnRLTMEbb4i_JsJQrHdTJCDxl6b-coFSLfhs-1BpjJ_SKlB56udaBI2xrstyJU4jmQDeUCKlwDihtRlUsOfZWrw6xM_k1Q0Q8QPg3WGRdX-35xfBTkqlW4yo5aTOXT3cc4SoOf-hvySZ9aepVrUd1DBHT9XgqYoGwb1d8yfe2lgfRTBVjhVVPF-joVpLXq0IMzNtlLdBhQtAw8TTKr6e3DONr6Cnwn5IgYHGmDP0CoQ-m2S2X-9WDA',
+    imageUrl: '/src/assets/images/project_kinetix_launch_1795492511473.jpg',
     imageAlt: 'Kinetix Product Launch Film thumbnail',
     hasVideoOverlay: true,
     challenge: 'Needed flagship launch film for Series A announcement.',
@@ -202,8 +193,7 @@ export const PROJECTS: ProjectItem[] = [
     metric: '4.9 App Store',
     title: 'Veloce Habit App',
     summary: 'Daily routine coaching with adaptive streak tracking.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida/ALJJyrAWZPYLsqDRHc87zwuYLTuMRCPEGZsqDrouqeueFZvppWq8NP_sNoQVS95YT2cYaQcqb8FrN0p78Wh3PvfqW7yowTQzc2-0vbjdR1kvXGFvO0hms5HtvZqndHD-xrFXUHZlgI7-jmvy9MaPokBZM0BT22wJURRedbFHngcAs1WXpgn_SMYzJ4ehVD4ZRS4YFTW7ims14CpKFj-A53at_V9aMIEkR24Z_679f4Sq4mxsQ4xzXlPdPaMHmdD6QUegxHE',
+    imageUrl: '/src/assets/images/project_veloce_habit_1795492512481.jpg',
     imageAlt: 'Veloce Fitness and Habit Tracker Mobile App mockup',
     challenge: 'Users abandoned rigid daily checklists after week one.',
     solution: 'Designed adaptive streak rings and 1-tap check-in widgets.',
@@ -219,8 +209,7 @@ export const PROJECTS: ProjectItem[] = [
     metric: '14 hrs/wk saved',
     title: 'DispatchOS Center',
     summary: 'Automated agent monitoring and workflow orchestration UI.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida/ALJJyrBSI9xS5pmSCFN4Uo49RuodN3X6mOzYjA7V-jA7y95lbTnbyzlMZiU1w8M7TbfG0yI9trBU7BzuWeeEOCdoZuIZQMfidwDOrzLNZk1m8fEkMW3aGUO9pBabzns_MEhQ_PK3KV_6j-QDEu8muJ8YXqIS2NNcZqD9rBGmihLBY6mSCjCehe-LVLsajYffFZm3t5oe31RVhuGo8SSYrq8aNmbbQl2SOHbaO3yHCt4-ZnPdnlzCAP2uV4H1lkKQYCQxfdU',
+    imageUrl: '/src/assets/images/project_dispatchos_center_1795492512555.jpg',
     imageAlt: 'DispatchOS AI Ops Command Center mockup',
     challenge: 'Manual ticket routing slowed down operations teams.',
     solution: 'Built live AI agent monitor with exception-only alerts.',

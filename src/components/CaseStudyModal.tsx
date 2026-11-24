@@ -18,14 +18,17 @@ export function CaseStudyModal({
   onRequestSimilar,
 }: CaseStudyModalProps) {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
 
   useEffect(() => {
     if (!project) return;
+    const previousFocus = document.activeElement as HTMLElement | null;
     closeButtonRef.current?.focus();
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        onClose();
+        onCloseRef.current();
       }
     };
     const previousOverflow = document.body.style.overflow;
@@ -35,8 +38,9 @@ export function CaseStudyModal({
     return () => {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener('keydown', handleKeyDown);
+      previousFocus?.focus();
     };
-  }, [project, onClose]);
+  }, [project]);
 
   const handleRequestSimilar = () => {
     if (!project) return;

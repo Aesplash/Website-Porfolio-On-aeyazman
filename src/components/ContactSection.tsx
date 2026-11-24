@@ -52,7 +52,7 @@ export function ContactSection({
     ? `Hi Muzammil, I'd like to scope a ${selectedService} sprint (similar to ${referenceProject}) on an ${selectedTimeline} timeline with Splash Studio.`
     : `Hi Muzammil, I'd like to scope a ${selectedService} sprint on an ${selectedTimeline} timeline with Splash Studio.`;
 
-  const whatsappHref = `https://wa.me/0000000000?text=${encodeURIComponent(briefMessage)}`;
+  const whatsappHref = `https://wa.me/?text=${encodeURIComponent(briefMessage)}`;
   const emailHref = `mailto:muzammil@splashstudio.co?subject=${encodeURIComponent(
     `Splash Studio — ${selectedService}`
   )}&body=${encodeURIComponent(briefMessage)}`;

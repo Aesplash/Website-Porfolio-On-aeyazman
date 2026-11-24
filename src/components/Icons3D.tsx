@@ -5,7 +5,7 @@ interface Icon3DProps {
 }
 
 export function Icon3DDesign({ className = 'w-11 h-11' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const baseGrad = `${uid}-base`;
   const accentGrad = `${uid}-accent`;
   const penGrad = `${uid}-pen`;
@@ -61,18 +61,18 @@ export function Icon3DDesign({ className = 'w-11 h-11' }: Icon3DProps) {
       {/* 3D Stylus / Pen floating top-right */}
       <g filter={`url(#${shadowId})`}>
         <path
-          d="M37.8 6.8L41.2 10.2C41.9 10.9 41.9 12 41.2 12.7L30.5 23.4L25.5 24.5L26.6 19.5L37.3 8.8C37.4 8.7 37.5 6.9 37.8 6.8Z"
+          d="M37.8 6.8C38.5 6.1 39.6 6.1 40.3 6.8L41.7 8.2C42.4 8.9 42.4 10 41.7 10.7L30.5 21.9L25.5 23L26.6 18L37.8 6.8Z"
           fill={`url(#${penGrad})`}
         />
-        <path d="M36.3 8.3L39.7 11.7L41.2 10.2L37.8 6.8L36.3 8.3Z" fill="#5C7FFF" />
-        <path d="M26.6 19.5L30.5 23.4L25.5 24.5L26.6 19.5Z" fill="#94A6FF" />
+        <path d="M36.3 8.3L40.2 12.2L41.7 10.7L37.8 6.8L36.3 8.3Z" fill="#5C7FFF" />
+        <path d="M26.6 18L30.5 21.9L25.5 23L26.6 18Z" fill="#94A6FF" />
       </g>
     </svg>
   );
 }
 
 export function Icon3DAnalytics({ className = 'w-11 h-11' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const barTop = `${uid}-top`;
   const barFront = `${uid}-front`;
   const barSide = `${uid}-side`;
@@ -131,7 +131,7 @@ export function Icon3DAnalytics({ className = 'w-11 h-11' }: Icon3DProps) {
 }
 
 export function Icon3DBot({ className = 'w-11 h-11' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const bodyGrad = `${uid}-body`;
   const visorGrad = `${uid}-visor`;
   const shadowId = `${uid}-shadow`;
@@ -196,7 +196,7 @@ export function Icon3DBot({ className = 'w-11 h-11' }: Icon3DProps) {
 }
 
 export function Icon3DCode({ className = 'w-11 h-11' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const winGrad = `${uid}-win`;
   const codeGrad = `${uid}-code`;
   const shadowId = `${uid}-shadow`;
@@ -269,7 +269,7 @@ export function Icon3DCode({ className = 'w-11 h-11' }: Icon3DProps) {
 }
 
 export function Icon3DVideo({ className = 'w-11 h-11' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const bodyGrad = `${uid}-body`;
   const lensGrad = `${uid}-lens`;
   const shadowId = `${uid}-shadow`;
@@ -316,7 +316,7 @@ export function Icon3DVideo({ className = 'w-11 h-11' }: Icon3DProps) {
 }
 
 export function Icon3DSearch({ className = 'w-10 h-10' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const ringGrad = `${uid}-ring`;
   const glassGrad = `${uid}-glass`;
   const shadowId = `${uid}-shadow`;
@@ -375,7 +375,7 @@ export function Icon3DSearch({ className = 'w-10 h-10' }: Icon3DProps) {
 }
 
 export function Icon3DDraw({ className = 'w-10 h-10' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const rulerGrad = `${uid}-ruler`;
   const bodyGrad = `${uid}-body`;
   const shadowId = `${uid}-shadow`;
@@ -434,7 +434,7 @@ export function Icon3DDraw({ className = 'w-10 h-10' }: Icon3DProps) {
 }
 
 export function Icon3DTerminal({ className = 'w-10 h-10' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const faceGrad = `${uid}-face`;
   const shadowId = `${uid}-shadow`;
 
@@ -482,7 +482,7 @@ export function Icon3DTerminal({ className = 'w-10 h-10' }: Icon3DProps) {
 }
 
 export function Icon3DRocket({ className = 'w-10 h-10' }: Icon3DProps) {
-  const uid = useId();
+  const uid = useId().replace(/:/g, '');
   const hullGrad = `${uid}-hull`;
   const flameGrad = `${uid}-flame`;
   const shadowId = `${uid}-shadow`;

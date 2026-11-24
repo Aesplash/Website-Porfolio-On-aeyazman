@@ -1,17 +1,12 @@
-import { BRAND_ASSETS, NAV_LINKS } from '../data/studioData';
-import { BrandImage } from './BrandImage';
+import { NAV_LINKS } from '../data/studioData';
+import { SplashLogo } from './BrandImage';
 
 export function Footer() {
   return (
     <footer className="bg-[#0F172A] text-[#F8FAFC]">
       <div className="max-w-[1200px] mx-auto px-5 md:px-8 py-10 md:py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <a href="#top" className="inline-flex items-center gap-4 shrink-0">
-          <BrandImage
-            src={BRAND_ASSETS.logoLight}
-            alt="Splash Studio"
-            fallbackVariant="logo-light"
-            className="h-10 w-auto object-contain"
-          />
+          <SplashLogo variant="light" />
         </a>
 
         <nav aria-label="Footer navigation" className="flex flex-wrap items-center gap-5 md:gap-6">

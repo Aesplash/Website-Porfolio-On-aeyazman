@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { BRAND_ASSETS, NAV_LINKS } from '../data/studioData';
-import { BrandImage } from './BrandImage';
+import { NAV_LINKS } from '../data/studioData';
+import { SplashLogo } from './BrandImage';
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -25,12 +25,7 @@ export function Navbar() {
           className="inline-flex items-center shrink-0 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2F5BFF] rounded-sm"
           aria-label="Splash Studio home"
         >
-          <BrandImage
-            src={BRAND_ASSETS.logoDark}
-            alt="Splash Studio"
-            fallbackVariant="logo-dark"
-            className="h-10 md:h-12 w-auto object-contain"
-          />
+          <SplashLogo variant="dark" />
         </a>
 
         <nav

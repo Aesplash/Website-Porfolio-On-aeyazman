@@ -17,6 +17,7 @@ const sectionEase = [0.22, 1, 0.36, 1] as const;
 
 export function PortfolioSection({ onSelectProject }: PortfolioSectionProps) {
   const [activeFilter, setActiveFilter] = useState<ProjectCategory>('all');
+  const [hasFiltered, setHasFiltered] = useState(false);
 
   const filteredProjects = useMemo(() => {
     if (activeFilter === 'all') return PROJECTS;
@@ -56,7 +57,10 @@ export function PortfolioSection({ onSelectProject }: PortfolioSectionProps) {
                 key={filter.id}
                 type="button"
                 aria-pressed={isActive}
-                onClick={() => setActiveFilter(filter.id)}
+                onClick={() => {
+                  setHasFiltered(true);
+                  setActiveFilter(filter.id);
+                }}
                 className={`inline-flex items-center justify-center rounded-full px-3.5 md:px-4 py-2 font-body text-[13px] leading-[18px] tracking-[0.1px] font-semibold whitespace-nowrap shrink-0 transition-colors duration-150 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2F5BFF] cursor-pointer ${
                   isActive
                     ? 'bg-[#2F5BFF] text-white'
@@ -77,22 +81,27 @@ export function PortfolioSection({ onSelectProject }: PortfolioSectionProps) {
           </p>
         </div>
       ) : (
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
-          <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeFilter}
+            initial={hasFiltered ? { opacity: 0, y: 10 } : false}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6, transition: { duration: 0.14 } }}
+            transition={{ duration: 0.25, ease: sectionEase }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch"
+          >
             {filteredProjects.map((project, index) => (
               <motion.button
                 key={project.id}
-                layout="position"
                 type="button"
                 initial={{ opacity: 0, y: 20, scale: 0.985 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.97, transition: { duration: 0.16 } }}
+                animate={hasFiltered ? { opacity: 1, y: 0, scale: 1 } : undefined}
+                whileInView={hasFiltered ? undefined : { opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.12 }}
                 transition={{
-                  duration: 0.45,
-                  delay: Math.min(index * 0.07, 0.28),
+                  duration: 0.42,
+                  delay: Math.min(index * 0.06, 0.24),
                   ease: sectionEase,
-                  layout: { duration: 0.25, ease: sectionEase },
                 }}
                 whileHover={{ y: -4, transition: { duration: 0.18, ease: sectionEase } }}
                 onClick={() => onSelectProject(project)}
@@ -137,8 +146,8 @@ export function PortfolioSection({ onSelectProject }: PortfolioSectionProps) {
                 </div>
               </motion.button>
             ))}
-          </AnimatePresence>
-        </motion.div>
+          </motion.div>
+        </AnimatePresence>
       )}
     </section>
   );
