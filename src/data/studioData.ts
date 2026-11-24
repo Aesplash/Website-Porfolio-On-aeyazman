@@ -50,7 +50,7 @@ export interface TestimonialItem {
 }
 
 export const BRAND_ASSETS = {
-  founderAvatar: '/src/assets/images/founder_muzammil_avatar_1795492509234.jpg',
+  founderAvatar: '/assets/aistudio/muzammil_dp.jpg',
 };
 
 export const NAV_LINKS = [
